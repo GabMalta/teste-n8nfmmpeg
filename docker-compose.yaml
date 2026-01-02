@@ -28,6 +28,7 @@ services:
       - OFFLOAD_MANUAL_EXECUTIONS_TO_WORKERS=true
       - N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true
       - N8N_COMMUNITY_PACKAGES_ALLOW_TOOL_USAGE=true
+      - NODES_EXCLUDE="[]"
       - 'NODE_FUNCTION_ALLOW_EXTERNAL=*'
     volumes:
       - 'n8n2-data:/home/node/.n8n2'
